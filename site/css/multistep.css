@@ -1,0 +1,30 @@
+input .invalid{
+    background-color: #af3636;
+}
+
+.tab{
+    display: none;
+}
+
+.step_{
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgb(49, 226, 43);
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.2;
+}
+
+.step_ .active{
+    opacity: 1;
+    height: 20px;
+    width: 20px;
+    margin: 0 2px;
+    opacity: 0.2;
+}
+
+.step_ .finish{
+    background-color: purple;
+}

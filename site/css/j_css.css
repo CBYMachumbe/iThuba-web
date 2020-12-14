@@ -1,0 +1,130 @@
+.container{ /*this is grid styling of the page*/
+    width: 100vw;
+    height: 100vh;
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /*specifiying the # columns & their sizes: we have 3 cols of size 1fr(fraction)*/
+    grid-template-rows: 50px 1fr 1fr 40px;
+
+    gap: 10px; /*gap between the containers*/
+
+    font-family: 'Montserrat', sans-serif;
+
+    /*margins at the edges*/
+    padding: 10px; 
+    box-sizing: border-box; 
+
+
+}
+
+.header{
+    /*the 1 & 4 represent the grid lines within the content section*/
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.content{
+    /*middle of the screen*/
+    grid-row-start: 2;
+    grid-row-end: span 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+    overflow-y: scroll;
+
+}
+
+.content-space{
+    /*middle of the screen*/
+    grid-row-start: 2;
+    grid-row-end: span 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+}
+
+.content-col{
+    /*make a col that spans 2 rows*/
+    grid-row-start: 2;
+    grid-row-end: span 2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+/*
+.container div{
+    padding: 10dpx;
+    border: 1px solid orangered;
+}*/
+
+.navbar{
+    background-color: #3c53ab;
+    height: 50px;
+}
+
+.logo{
+    color: black;
+    font-size: 35px;
+    line-height: 50px;
+    padding: 0 50px;
+    font-weight: bolder;
+    font-style: verdana;
+}
+
+.nav-list{
+    float: right;
+    margin-right: 20px;
+}
+
+.nav-list-item{
+    display: inline-block;
+    line-height: 50px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+a.active, a:hover{
+    color: orangered;
+    transition: .5s;
+}
+
+.heading{
+    font-size: 20px; 
+    font-weight: 500px;
+    display: block;
+}
+
+.btn{
+    background-color: orangered;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    margin-top: 20px;
+}
+
+.btn:hover{
+    background-color: white;
+    color: orangered;
+    border: 1px solid orangered;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+  }

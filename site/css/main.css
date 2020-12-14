@@ -1,0 +1,66 @@
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+  }
+  
+.modal{
+    z-index: 20; 
+}
+.modal-backdrop{
+    z-index: 10;        
+}
+
+.round-btn{
+    width: 60px; 
+    height: 30px; 
+    border-radius: 25px; 
+    font-size: 12px; 
+    text-align: center; 
+}
+
+.edit-left{
+    padding-left: 75%;
+}
+
+.video-box{
+    width: 100%;
+    height: 100%;            
+    position: absolute;
+    left: 0;
+}
+.video-stack-top{
+    z-index: 9;
+    position: absolute;
+    top: 380px;
+    right: 20px;
+}
+
+.month-choose:hover{
+    cursor: pointer;
+}
+
+.next-line{
+    display: block;
+}
+
+.session-card-spacing{
+    margin-bottom: 10px;
+}
+
+
+.form-outer{
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.form-outer form{
+    display: flex;
+    width: 400%;
+}
+
